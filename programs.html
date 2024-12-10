@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-sm navbar-light" style="background-color: #00093C; ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html" ><img src="./img/logo_white.svg"></a>  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>             
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white !important;">Все курсы</a>
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white !important;">Мероприятия</a>
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white !important;">Базы знаний</a>
+                        <a class="nav-link active" aria-current="page" href="#" style="color: white !important;">Карьера</a>
+                        <div class="d-flex align-items-center">
+                            <a class="nav-link active" aria-current="page" href="#" style="color: white !important;"><img src="./img/icon_map.svg">Нижний Новгород</a>
+                            <a class="nav-link active" aria-current="page" href="#" style="color: white !important;">8 800 950-33-98 </a>
+                            <a class="nav-link active" aria-current="page" href="./sign-in.html" style="color: white !important;"><img src="./img/icon_chelik.svg">Войти</a>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="row">
+            <div class="col-12">
+                <h1 class="mt-3 fw-bold">Все мероприятия</h1>
+            </div>
+        </div>
+
+        <div class="box d-flex flex-column mt-3" style="gap:20px;">
+            <div class="row" >
+                <div class="col-12">
+                    <div class="block_1 d-flex flex-md-row flex-column align-items-md-center p-4" style="background-color: #F7BC75; border-radius: 20px; gap:20px;">
+                        <div>
+                            <h1>25</h1> <p>ноября</p>                       
+                        </div>
+                        <div>
+                            <h2>День открытых дверей</h2>                        
+                            <p>Приглашаем всех желающих на бесплатную экскурсию 
+                                в мир востребованных профессий и полезных навыков</p>
+                        </div>
+                        <button class="button_stroke" data-bs-toggle="modal" data-bs-target="#exampleModal">Подробнее<img src="./img/button_arrow.svg"></button>   
+                    </div>                
+                </div>
+            </div>
+            <div class="row g-4" style="gap: 20px;">
+                <div class="col" >
+                    <div class="block_2 d-flex align-items-center flex-column p-4" style="background-color: #C5DDFF; border-radius: 20px;">
+                        <img src="./img/monitor.svg">
+                        <p>Программы обучения</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="block_3 d-flex align-items-center flex-column p-4" style="background-color: #B8EFCF; border-radius: 20px;">
+                        <img src="./img/newspaper.svg">
+                        <p>Новости обучения</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="block_4 d-flex align-items-center flex-column p-4" style="background-color: #FFEEF6; border-radius: 20px;">
+                        <img src="./img/diagram.svg">
+                        <p>Мир IT</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" >
+                    <div class="block_5 d-flex align-items-center p-4" style="background-color: #FFE38E; border-radius: 20px; gap:40px;">
+                        <img src="./img/try.svg">    
+                        <div>                        
+                            <h1>Попробуй!</h1>
+                            <p>Пройдите тест и узнайте свои способности 
+                                в сфере информационных технологий</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"><div>
+                <h1>25</h1> <p>ноября</p>                       
+            </div>
+            <div>
+                <h2>День открытых дверей</h2>                        
+                <p>Приглашаем всех желающих на бесплатную экскурсию 
+                    в мир востребованных профессий и полезных навыков</p>
+            </div></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <img src="./img/kid.jpg" style="width: 100%;">   
+                <p>Будет очень круто и будет очень много подарков и будет очень круто и будет очень много подарков и будет очень круто и будет очень много подарков и будет очень круто и будет 
+                    очень много подарков и будет очень круто и будет очень много подарков
+                     и будет очень круто и будет очень много подарков и будет очень круто и будет очень много подарков и будет очень круто и будет очень много подарков и будет очень круто и
+                     будет очень много подарков и будет очень круто и будет очень много подарков и будет очень круто и будет очень много подарков </p>           
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top p-5" style="background-color: #00093C; color: white !important;">
+        
+        <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img src="./img/logo_white.svg">
+        </a>
+        <p>8 800 950-33-98 </p>
+        <p>г. Москва, ул. Ленина, д. 50</p>
+        <p>info@hodfutureacademy.ru</p>
+        <p>© ХОД, Future Academy</p>
+        </div>
+    
+        <div class="col mb-3">
+    
+        </div>
+    
+        <div class="col mb-3">
+        <h5>Детям</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Робототехника</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Создание игр</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Программирование</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Мультимедиа</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Soft Skills</a></li>
+        </ul>
+        </div>
+    
+        <div class="col mb-3">
+        <h5>Взрослым</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Разработчик игр на Unity</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Разработка ПО</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Графический дизайн</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Тестировщиц ПО</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Интернет Маркетинг</a></li>
+        </ul>
+        </div>
+    
+        <div class="col mb-3">
+        <h5>Информация</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Об академии</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Мероприятия</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Новости</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">База знаний</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 ">Контакты</a></li>
+        </ul>
+        </div>   
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
